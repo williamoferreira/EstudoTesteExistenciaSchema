@@ -1,0 +1,30 @@
+object Form1: TForm1
+  Left = 446
+  Height = 502
+  Top = 187
+  Width = 785
+  Caption = 'Form1'
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  object MySQL57Connection1: TMySQL57Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'mysql'
+    KeepConnection = False
+    Params.Strings = (
+      'Port=3306'
+    )
+    Password = 'Willard1'
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    SkipLibraryVersionCheck = False
+    Left = 560
+    Top = 113
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = MySQL57Connection1
+    Left = 560
+    Top = 170
+  end
+end
